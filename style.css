@@ -1,0 +1,91 @@
+#frist_page_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(./resources/back-bg.jpg) no-repeat;
+    background-size: cover;
+    margin: 0;
+    overflow: hidden;
+    
+}
+
+.container {
+    position: relative;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    background-image: url(./resources/frist_page_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    position: relative;
+    top: -0.5rem;
+    transition: transform 4.6s ease-in-out ;
+    transform-origin: center;
+    box-shadow: 0px 0px 30px 0px white;
+}
+
+.circle.open {
+    transform: scale(50);  /* Makes the circle grow outward */
+}
+
+.button {
+    position: absolute;
+    width: 12rem;
+    top: 25rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(56, 56, 223);
+    color: whitesmoke;
+    font-size: 1.3rem;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 1s;
+    border: 3.5px solid orangered;
+}
+.button:hover{
+    background-color: orangered;
+    border: 3.5px solid rgb(56, 56, 223);
+}
+
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position:absolute;
+    top:-12rem;
+    left: -13.5rem;
+    transform:translateX(-50%);
+    font-size: 5rem;
+    z-index:2;
+    opacity:0;
+    animation:popIn 1s forwards;
+    text-align:center;
+    color:white;
+    white-space: nowrap;
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0; /* Start invisible */
+        transform: translateY(-30px) scale(0.5) rotateY(-45deg); /* Start above and small */
+    }
+    50% {
+        opacity: 1; /* Fully visible */
+        transform: translateY(10px) scale(1.05) rotateY(0deg); /* Slight bounce */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0) scale(1) rotateY(0deg); /* End in place */
+    }
+}
+
+
+
+

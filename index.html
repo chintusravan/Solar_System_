@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Solar System</title>
+</head>
+<body id="frist_page_body">
+    
+    <div class="container">
+        <h1>Explore Solar System</h1>
+        <div class="circle" id="circle"></div>
+        <button class="button" id="openButton">Explore Space</button>
+    </div>
+
+    <script >
+        const button = document.getElementById('openButton');
+        const circle = document.getElementById('circle');
+
+        button.addEventListener('click', function() {
+            circle.classList.add('open');
+
+            // Redirect to the next page after the circle grows
+            setTimeout(function() {
+                window.location.href = 'home.html';  // Replace with your actual next page URL
+            }, 1005);  // Delay the redirect by 1 second to allow the animation to finish
+        });
+    </script>
+</body>
+</html>

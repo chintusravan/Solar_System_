@@ -1,0 +1,262 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    cursor: url(./planet_page_pics/rocket.png),auto;
+ }
+ body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./planet_page_pics/bg.jpg);
+    background-size: cover;
+
+ }
+#Earth{
+    background-image: url(./planet_page_pics/eath.jpg);
+    width: 20rem;
+    height: 20rem;
+    cursor: url(./planet_page_pics/rocket.png),auto;
+    border-radius: 50%;
+    position: absolute;
+    background-size:120% 105%;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    animation: rotate 5s infinite linear;
+    box-shadow: inset 0px 0px 5px #FDFfF29E,
+                inset 10px 0px 50px #000000;
+}
+#orbit{
+    width: 35rem;
+    height: 35rem;
+    border: 1px solid white;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    animation: rotate-2 40s infinite linear;
+    cursor: url(./planet_page_pics/rocket.png),auto;
+
+    
+}
+@keyframes rotate-2{
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+#moon{
+    width: 8rem;
+    height: 8rem;
+    background-image: url(./planet_page_pics/moon.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 10%;
+    
+}
+@keyframes rotate{
+    0%{
+        background-position-x:0px;
+    }
+    100%{
+        background-position-x: 100px;
+    }
+}
+#text-box{
+    backdrop-filter: blur(2rem);
+    float: right;
+    width: 45rem;
+    height: auto;
+    color: white;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    top: 15%;
+    position: absolute;
+    left: 40%;
+}
+#text-box-e-s{
+    backdrop-filter: blur(2rem);
+    float: right;
+    width: 45rem;
+    height: auto;
+    color: white;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    top: 15%;
+    position: absolute;
+    left: 45%;
+}
+.back_home_button{
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+    border: none;
+    cursor: pointer;
+}
+.back_home_button:hover{
+    scale: 1.1;
+    fill: white;
+    box-shadow: 0px 0px 10px 0px white;
+}
+
+h1{
+        font-family: "Marcellus", serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.1rem;
+      }
+      
+P{
+        font-family: "Marcellus", serif;
+        font-weight: 100;
+        font-style: normal;
+        letter-spacing: 0.1rem;
+
+      }
+#back{
+    float: right;
+    margin: 1rem;
+}
+#back:hover{
+    filter:drop-shadow(0px 0px 10px rgb(126, 234, 240));
+}
+#jupiter{
+    background-image: url(./planet_page_pics/jupiter_map.png);
+    width: 20rem;
+    height: 20rem;
+    cursor: url(./planet_page_pics/rocket.png),auto;
+    border-radius: 50%;
+    position: absolute;
+    background-size:120% 105%;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    animation: rotate 5s infinite linear;
+    box-shadow: inset 0px 0px 5px #FDFfF29E,
+                inset 10px 0px 50px #000000;
+}
+#mars{
+    background-image: url(./planet_page_pics/mars_map.jpg);
+    width: 20rem;
+    height: 20rem;
+    cursor: url(./planet_page_pics/rocket.png),auto;
+    border-radius: 50%;
+    position: absolute;
+    background-size:90% 100%;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    animation: rotate 5s infinite linear;
+    box-shadow: inset 0px 0px 5px #FDFfF29E,
+                inset 10px 0px 50px #000000;
+}
+#mercury{
+    background-image: url(./planet_page_pics/mercury_map.jpg);
+    width: 20rem;
+    height: 20rem;
+    cursor: url(./planet_page_pics/rocket.png),auto;
+    border-radius: 50%;
+    position: absolute;
+    background-size:180% 115%;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    animation: rotate 5s infinite linear;
+    box-shadow: inset 0px 0px 5px #FDFfF29E,
+                inset 10px 0px 50px #000000;
+}
+#neptune{
+    background-image: url(./planet_page_pics/neptune_map.jpg);
+    width: 20rem;
+    height: 20rem;
+    cursor: url(./planet_page_pics/rocket.png),auto;
+    border-radius: 50%;
+    position: absolute;
+    background-size:180% 115%;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    animation: rotate 5s infinite linear;
+    box-shadow: inset 0px 0px 5px #FDFfF29E,
+                inset 10px 0px 50px #000000;   
+}
+#saturn{
+    background-image: url(./planet_page_pics/saturn-map.jpeg);
+    width: 20rem;
+    height: 20rem;
+    cursor: url(./planet_page_pics/rocket.png),auto;
+    border-radius: 50%;
+    position: absolute;
+    background-size:180% 115%;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    animation: rotate 5s infinite linear;
+    box-shadow: inset 0px 0px 5px #FDFfF29E,
+                inset 10px 0px 50px #000000;   
+   
+}
+#orbit-saturn{
+    border: 10px solid rgb(211, 197, 159) ;
+    position: absolute;
+    background-size: cover;
+    border-radius: 50%;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    animation: rotate-2 40s infinite linear;
+    cursor: url(./planet_page_pics/rocket.png),auto;
+    width: 40rem;
+
+}
+#uranus{
+    background-image: url(./planet_page_pics/uranus-MAP.jpg);
+    width: 20rem;
+    height: 20rem;
+    cursor: url(./planet_page_pics/rocket.png),auto;
+    border-radius: 50%;
+    position: absolute;
+    background-size:180% 115%;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    animation: rotate 5s infinite linear;
+    box-shadow: inset 0px 0px 5px #FDFfF29E,
+                inset 10px 0px 50px #000000;   
+
+}
+#venus{
+    background-image: url(./planet_page_pics/venus-map.png);
+    width: 20rem;
+    height: 20rem;
+    cursor: url(./planet_page_pics/rocket.png),auto;
+    border-radius: 50%;
+    position: absolute;
+    background-size:180% 115%;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    animation: rotate 5s infinite linear;
+    box-shadow: inset 0px 0px 5px #FDFfF29E,
+                inset 10px 0px 50px #000000;   
+
+}
+#sun{
+    background-image: url(./planet_page_pics/sun-map.jpg);
+    width: 20rem;
+    height: 20rem;
+    cursor: url(./planet_page_pics/rocket.png),auto;
+    border-radius: 50%;
+    position: absolute;
+    background-size:180% 115%;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    animation: rotate 5s infinite linear;
+    box-shadow: inset 0px 0px 5px #FDFfF29E,
+                inset 10px 0px 50px #000000;   
+
+}
